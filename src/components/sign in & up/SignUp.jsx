@@ -1,9 +1,12 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 export default function SignUp() {
-const navigate=useNavigate();
+  useEffect(()=>{
+    document.title='Regiser'
+  });
 
+  const navigate=useNavigate();
   const firstNameRef = useRef(null);
   const lastNameRef = useRef(null);
   const ageRef = useRef(null);

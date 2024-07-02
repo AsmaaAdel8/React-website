@@ -14,7 +14,8 @@ export default function Login() {
     var password=localStorage.getItem('UserPassword')
 
     if(name===username && email===useremail && password===userpassword){
-      navigate('/home', { replace: true });
+      navigate('/', { replace: true });
+      <navigate to='/'/>
       alert(`Welcome ${name}`)
     }else{
       alert('Your userName or Email or Password was wrong try again')

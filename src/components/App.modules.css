@@ -1,9 +1,10 @@
 .rate{
     width: 10%;
+    height: 8%;
     text-align: center;
     position: absolute;
     top:0;
-    right: -20px;
+    
     background-color: rgb(142, 118, 165);
 }
 .stat{
@@ -15,6 +16,6 @@
 }
 .dat{
     position: relative;
-    margin: 15px 10px !important;
+   
     /* margin: 2px 5px; */
 }

@@ -10,7 +10,7 @@ export default function People() {
  })
 
   return ( 
-    <div className='d-flex'>
+    <div className='row'>
       <div className='col-md-3 stat'>
         <div className='bg-success w-25 mb-2' style={{height:"2px"}}></div>
         <p>Trending</p>
@@ -20,9 +20,9 @@ export default function People() {
         <div className='bg-success w-75' style={{height:"2px"}}></div>
       </div>
       <div className='col-md-8 row'>
-        {trendingPerson.map((e)=><div key={e.id} className='col-md-3 dat '>
+        {trendingPerson.map((e)=><div key={e.id} className='col-md-4 dat'>
           <Link className="nav-link" to={`/details/${e.media_type}/${e.id}`}>
-            <img src={`${urlimg}${e.profile_path}`} alt="poster" width={250}/>
+            <img src={`${urlimg}${e.profile_path}`} alt="poster" width={200} height={200} className='mr-3'/>
             <h3 className='h5'>{e.original_name}</h3>
           </Link>
         </div>)}
