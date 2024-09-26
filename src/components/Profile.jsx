@@ -10,7 +10,7 @@ export default function Profile() {
     })
 
   return (
-    <div className='bg-success m-auto w-50 mt-5 text-center'>
+    <div className='m-auto w-50 mt-5 text-center'>
         <h2 className='m-2'>Name : {name} {lastName}</h2>
         <h2 className='m-2'>Email : {email}</h2>
         <h3 className='mb-2'>Age : {age} </h3>

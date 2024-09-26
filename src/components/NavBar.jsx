@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
  
 export default function NavBar() {
     
-    let name=localStorage.getItem('UserName');
+    const name=localStorage.getItem('UserName');
     return (
         <nav className="navbar navbar-expand-lg bg-black navbar-dark" data-bs-theme="dark">
             <div className="container-fluid">

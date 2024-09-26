@@ -1,13 +1,13 @@
 import React from 'react'
 import { Navigate } from 'react-router-dom'
 
-export default function CheckUser({Children}) {
- 
+export default function CheckUser({children}) {
+    // console.log(children);
     let name = localStorage.getItem('UserName')
-    if(!name){
-        return <Navigate to='login'/>
+    if(name){
+        return children;
     }else{
-        return Children;
+        return <Navigate to='login'/>
     }
  
 }
